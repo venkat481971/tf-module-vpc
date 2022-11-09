@@ -22,10 +22,10 @@ module "private_subnets" {
   internet_gateway_id       = aws_internet_gateway.gw.*.id[0]
 }
 
-//output "public_subnets" {
-//  value = module.public_subnets
-//}
-//
+output "public_subnets" {
+  value = module.public_subnets
+}
+
 output "private_subnets" {
   value = module.private_subnets
 }
